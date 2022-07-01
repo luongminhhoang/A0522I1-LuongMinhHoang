@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TẠO FORM ĐĂNG KÍ HỌC VIÊN</title>
+        <STYLE>
+            .container{
+                border: red;
+                width: 500px;
+                height: 300px;
+
+            }
+            .title {
+                text-align: left;
+                color: blue;
+                background-color: aqua;
+
+            }
+            table{
+                background-color: beige;
+            }
+            .cc{
+                color: blue;
+            }
+
+        </STYLE>
+</head>
+<body>
+    <form class="container">
+        <div class="title">
+            <h1> ĐĂNG KÍ HỌC VIÊN</h1>
+
+        </div>
+        <table >
+            <tr>
+                <th class="cc">
+                    Họ và tên
+
+                </th>
+                <td>
+                    <input type="text" name="yourname"size="35">
+                </td>
+
+            </tr>
+            <tr>
+                <th class="cc">
+                    Ngày sinh
+                </th>
+                <td>
+                    <input type="text" name="yourname"size="35">
+                </td>
+            </tr>
+            <tr>
+                <th class="cc">
+                    Giới  tính
+                </th>
+                <td>
+                <label>   <input type="radio" name="gender" value="men" > Nam</label>
+                    <label>   <input type="radio" name="gender" value="girl" > Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <th class="cc">
+                    Địa Chỉ
+                </th>
+                <td>
+                    <textarea cols="50" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th class="cc">
+                    Lớp
+
+                </th>
+                <td>
+                    <select name="chọn lớp">
+                        <option>chọn lớp</option>
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>A3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="cc">
+                    Email
+                </th>
+                <td>
+                    <input type="text" name="yourname"size="35">
+                </td>
+            </tr>
+            <tr>
+                <th class="cc">
+                    Điện Thoại
+                </th>
+                <td>
+                    <input type="text" name="yourname"size="35">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng kí">
+                    <input type="reset" value="Nhập Lại">
+                </td>
+            </tr>
+
+
+
+        </table>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a
+    a = prompt(`Enter a `);
+    var b
+    b = prompt(`Enter b `);
+    var c
+    c = prompt(`Enter c `);
+    var d = (b * b) - (4 * a * c);
+    if(a == 0) {
+        if(b == 0){
+            if (c == 0) {
+                alert('All are solutions of x');
+
+            }
+            else{
+                alert(`Can't solve for x`);
+            }
+        }
+        else{
+            alert('x = '+(-c/b));
+        }
+    }
+    else if (d >= 0) {
+        alert(`x1 = `+ ((-b + Math.sqrt(d)) / (2 * a)));
+        alert(`<br>`)
+        alert(`x2 = `+ ((-b - Math.sqrt(d)) / (2 * a)));
+    } else {
+        alert(`Can't solve for x`);
+    }
+</script>
+
+</body>
+</html>

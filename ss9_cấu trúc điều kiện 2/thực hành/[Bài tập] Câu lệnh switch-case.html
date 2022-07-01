@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="a"> <button type="button" onclick="action()"> tính số ngày </button>
+        <br><br>
+
+        <p id="u"> </p>
+
+    </div>
+<script>
+    function action() {
+        let input = document.getElementById("a").value;
+        switch (input) {
+            case '1' :
+                document.getElementById("u").innerText="tháng 1 có 31 ngày";
+                break;
+            case '2' :
+                document.getElementById("u").innerText="tháng 2 có 28,29 ngày";
+                break;
+            default :
+                document.write(null);
+                break;
+
+
+        }
+
+    }
+</script>
+</body>
+</html>

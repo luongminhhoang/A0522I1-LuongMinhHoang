@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperate = prompt("nhập nhiệt độ vào ");
+    while (temperate < 20 || temperate > 100){
+           if(temperate < 20){
+               alert("tăng nhiệt độ");
+               temperate = prompt("nhập nhiệt độ vào ");
+           }
+          else if (temperate > 100){
+               alert("giảm nhiệt độ");
+              temperate = prompt("nhập nhiệt độ vào ");
+           }
+    }
+    alert("nhiệt độ bình thường");
+</script>
+</body>
+</html>

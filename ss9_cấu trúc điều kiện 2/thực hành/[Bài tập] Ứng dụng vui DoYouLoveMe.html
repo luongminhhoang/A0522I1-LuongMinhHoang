@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #hoang{
+            position: absolute;
+        }
+        form{
+            padding: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+<form>
+    <H1>DO YOU LOVE ME ???</H1>
+    <table>
+        <tr>
+   <th> <input type="button" value="CÓ" onclick="dongy();" /></th>
+
+            <th> <input type="button"   id="hoang" value="không" onclick="nhaytumlum();" /></th>
+   </tr>
+    </table>
+<form/>
+
+
+
+
+
+<script>
+    function dongy() {
+        alert("<3")
+
+    }
+    function nhaytumlum() {
+        var x =math.floor(math.random()*window.innerWidth);
+        var y =math.floor(math.random()*window.innerHeight);
+        document.getElementById("hoang").style.left= x +  "120px";
+        document.getElementById("hoang").style.left= y + "120px";
+    }
+
+</script>
+</body>
+</html>

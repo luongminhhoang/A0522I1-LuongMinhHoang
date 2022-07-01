@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" id="c" method="post">
+    <div>
+        username <input type="text" id="a"  name="username">
+    </div>
+    <div>
+        password <input type="password" id="b"  name="username">
+    </div>
+
+</form>
+<button  id="u" onclick="c"> nhập vào </button>
+
+<script>
+    if(a=="Admin"){
+        if(b=="theMaster"){ document.getElementById("u").innerHTML="welcome"};
+        else if (b==null){document.getElementById("u").innerHTML="cancel"};
+        else {document.getElementById("u").innerHTML="wrong"};
+    }else if (a==null){document.getElementById("u").innerHTML="cancel"};
+    else {a==null){document.getElementById("u").innerHTML="i don't know"};
+</script>
+</body>
+</html>

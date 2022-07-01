@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let sodien=parseInt(prompt("số điện dùng tháng này là "));
+    if (sodien<0) {
+        alert("vui lòng nhập lại số điện của bạn");
+    }else if (sodien<=50){
+        let tiendien= sodien*1678;
+        alert("tiền điện phải đóng là :" + tiendien );
+    }
+    else if (sodien<=100) {
+        let tiendien = (50*1678)+((sodien-50)*1734);
+        alert("tiền điện phải đóng là :" + tiendien);
+    }
+        else if (sodien<=200){
+        let tiendien = 50*1678+(50*1734)+((sodien-100)*2014) ;
+        alert("tiền điện phải đóng là :" + tiendien);
+
+        }else {
+        let tiendien = 50*1678+(50*1734)+(100*2014)+((sodien-200)*2536);
+        alert("tiền điện phải đóng là :" + tiendien);
+
+    }
+</script>
+</body>
+</html>

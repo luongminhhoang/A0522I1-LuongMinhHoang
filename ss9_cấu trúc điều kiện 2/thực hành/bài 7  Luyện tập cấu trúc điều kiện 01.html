@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    <input type="text" id="phithuebao" placeholder="phi thue bao" >
+    <input type="button" onclick="thongBao()" value="Nhap" id="nhap" >
+
+
+
+    </form>
+<script>
+    function thongBao(){
+        let sophut = document.getElementById("phithuebao").value;
+
+
+        if (sophut>200){
+            let phi = (sophut-200)*200+150*400+50*600;
+            alert(phi);
+        }else if(sophut>50){
+            let phi=(sophut-50)*400+50*600;
+            alert(phi);
+        }else {
+            let phi=sophut*600;
+            alert(phi);
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        td, th {
+            width: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="">
+    <table>
+        <tr>
+            <th>
+                Amount
+            </th>
+            <th> From Currency</th>
+            <th>To Currency</th>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="hoang" style="width: 200px"/>
+            </td>
+            <td>
+                <select id="a">
+                    <option>vietnam</option>
+                    <option> Mỹ</option>
+                </select>
+            </td>
+            <td>
+                <select id="b">
+                    <option>vietnam</option>
+                    <option> Mỹ</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" name="as" value="convert" onclick="doitien()">
+            </td>
+        </tr>
+    </table>
+</form>
+<b id="result"></b>
+<script>
+    function doitien() {
+        var x, y, z;
+        x = parseInt(document.getElementById('hoang').value);
+        y = document.getElementById('a').value;
+        z = document.getElementById('b').value;
+        if (y == z)
+            if (z == "vietnam") document.getElementById('result').innerText = 'result:' + x + 'VNĐ';
+            else
+                document.getElementById('result').innerText = 'result' + x + '$';
+        else if (z == "vietnam") document.getElementById('result').innerText = 'resut:' + (x * 23000) + 'VNĐ';
+        else document.getElementById('result').innerText = 'result:' + (x / 23000) + '$';
+
+    }
+</script>
+</body>
+</html>

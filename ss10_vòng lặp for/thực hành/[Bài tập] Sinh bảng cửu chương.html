@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let program ;
+    program = "<table border='1' width='300' cellpassing='0' cellpadding = '3'>"
+    for (j=1;j<=10;j++){
+        program = program + "<tr>";
+        for (i=2;i<=10;i++){
+            program=program+"<td>" +i.toString()+"*"+j.toString()+"="+ i * j +"</td>";
+        }
+    }
+    document.write(program);
+</script>
+</body>
+</html>

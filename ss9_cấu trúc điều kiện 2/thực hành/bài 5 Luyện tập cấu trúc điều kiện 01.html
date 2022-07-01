@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let baikiemtra = parseInt(prompt("điểm kiểm tra"));
+    let baigiuaky = parseInt(prompt("điểm giữa kỳ"));
+    let baicuoiky = parseInt(prompt("điểm cuối kỳ"));
+    let diemtrungbinh = (baikiemtra + baigiuaky + baicuoiky) /3 ;
+    if ( diemtrungbinh>=8  ){
+        alert("học sinh giỏi");
+    }else if ( diemtrungbinh>=7 ){
+        alert("học sinh khá");
+    }else if (diemtrungbinh>=5){
+        alert("học sinh trung bình");
+    }else if (0<diemtrungbinh>=3){
+        alert("học sinh yếu ");
+    }else {
+        alert("Học sinh kém");
+    }
+
+</script>
+
+</body>
+</html>

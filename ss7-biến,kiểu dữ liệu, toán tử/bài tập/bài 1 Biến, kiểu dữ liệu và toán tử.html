@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputphysicpoint;
+    let inputchemistrypoint;
+    let inputbiologypoint;
+
+    inputphysicpoint = prompt("điểm vật lý");
+    inputchemistrypoint=prompt("điểm sinh học");
+    inputbiologypoint=prompt("điểm hóa học");
+    let physicpoint = parseInt(inputphysicpoint);
+    let chemistrypoint = parseInt( inputchemistrypoint);
+    let biologypoint = parseInt(inputbiologypoint);
+    let pointcenter = (physicpoint + chemistrypoint + biologypoint)/3 ;
+    document.write("point center : "+ pointcenter);
+
+
+
+</script>
+
+</body>
+</html>
