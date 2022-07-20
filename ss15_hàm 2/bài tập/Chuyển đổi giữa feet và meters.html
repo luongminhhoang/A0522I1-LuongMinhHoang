@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = parseInt(prompt(" nhập metter"))
+    let b = parseInt(prompt("nhập foot"))
+   let meter =  outputmeter(b)
+  let foot =    outputfoot(a)
+    document.write(meter)
+    document.write("<br>")
+    document.write(foot)
+
+function outputfoot(m) {
+
+return 3.279 * m ;
+
+}
+
+function outputmeter(f) {
+        return 0.305 * f ;
+
+
+}
+
+</script>
+</body>
+</html>

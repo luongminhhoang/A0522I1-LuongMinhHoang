@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  a=[];
+    for (let i=0;i<10;i++){
+        a[i]=parseInt(prompt("nhập mảng a vào"))
+    }
+    let so = parseInt( prompt("nhập số cần tìm"))
+    if (a.indexOf(so)!==-1){
+        document.write(so+ "số này chứa trong a "+"<br>")
+        a.splice(a.indexOf(so),1)
+        a.push(0)
+
+    }else {
+        document.write("không thấy số cần tìm")
+    }
+    document.write(a)
+</script>
+</body>
+</html>

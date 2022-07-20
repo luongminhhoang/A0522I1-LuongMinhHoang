@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<title>
+    Insert dashes (-) between even numbers
+</title>
+<script>
+    var  num= window.prompt("nhâp các số vào")
+    var str=num.toString();
+    var result=[];
+    for (var x=0;x<str.length;x++){
+        if (str[x]%2==0 && str[x+1]%2==0 ){
+            result.push("-"+str[x])
+        }else {
+            result.push(str[x])
+        }
+    }
+    console.log(result.toString());
+</script>
+</body>
+</html>

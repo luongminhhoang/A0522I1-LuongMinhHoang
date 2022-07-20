@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let tienlai
+let tiengui=parseInt(prompt("số tiền gửi ban đầu "))
+let tyle=parseInt(prompt("phần trăm lãi"));
+let nam=parseInt(prompt("nhập số tháng cần gửi"));
+for (let i=1;i<=nam;i++){
+    tienlai = tyle * (tiengui/100);
+    tiengui +=tienlai;
+
+}
+document.write(tienlai +"<br>"+ tiengui);
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nuocnao"   >
+<input type="button" value="tìm cầu thủ" onclick="bai5()">
+<p id="tencauthu"></p>
+<script>
+    function bai5() {
+        var ngoisao=["Polaris"," Aldebaran","Deneb","Vega", "Altair","Dubhe","Regulus" ]
+        var nuoc = ["Ursa Minor","Tarurus","Cygnus","Lyra"," Aquila","Ursa Major","Leo"]
+        let tg;
+        let dem=0;
+        var value = document.getElementById("nuocnao").value ;
+
+
+
+        for (let i=0;i<nuoc.length;i++){
+            if (nuoc[i] ==value  ){
+                tg=i
+            }
+            for (let j=0;j<ngoisao.length;j++){
+                if (tg==j){
+                    dem=0;
+                    document.getElementById("tencauthu").innerHTML=ngoisao[j];
+                      break;
+                }else {
+                    dem++
+                }
+                if (dem !=0){
+                    document.getElementById("tencauthu").innerHTML="không có dũ liêu";
+                }
+            }
+
+        }
+
+    }
+</script>
+</body>
+</html>

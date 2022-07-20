@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>nhập vào 1 số</label>
+<input type="text" id="value" placeholder="nhập một số vào">
+<input type="button" value="tăng 1 đơn vị" onclick="doiso()">
+<input type="reset" onclick="reset() ">
+<p id="hoang"> </p>
+<script>
+    function doiso() {
+        let a= +document.getElementById("value").value+1;
+        document.getElementById("hoang").innerHTML = a;
+
+
+    }
+    function reset() {
+        document.getElementById("value").value =" "
+        document.getElementById("hoang").innerHTML=" "
+
+    }
+</script>
+</body>
+</html>

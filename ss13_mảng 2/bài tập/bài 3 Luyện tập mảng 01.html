@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[10,20,40,50,70]
+    let max=0;
+    let sum=0  ;
+    let dem ;
+    for (let i =0;i<mang.length;i++){
+        if (mang[i]>max){
+            max=mang[i];
+        }
+
+        sum+=mang[i];
+        break
+    }
+
+    document.write(max);
+    document.write("<br>")
+    document.write("số trung bình là" +sum/mang.length)
+
+
+</script>
+
+</body>
+</html>

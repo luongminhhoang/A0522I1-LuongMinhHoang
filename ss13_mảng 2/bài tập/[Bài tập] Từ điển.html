@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="hoang" >
+<input type="button" onclick="tudien()" value="tìm kiếm">
+<div id="u"> </div>
+<script>
+    function tudien() {
+
+        var tiengviet=["chim","gà","tiền","tươi" ]
+        var tienganh = ["bird","chicken","money","tiếu"]
+
+        var tg;
+        let dem=0 ;
+
+        var value = document.getElementById("hoang").value;
+
+        for (i=0;i<tiengviet.length;i++){
+            if (value==tiengviet[i])
+            {tg = i }
+            for (j=0;j<tienganh.length;j++){
+                if (tg == j) {
+                    dem=0;
+
+
+                    document.getElementById("u").innerHTML=tienganh[j];
+                        break;
+
+
+                } else {
+                    dem++
+                }
+                if (dem !=0){
+                    document.getElementById("u").innerHTML="không có dữ liệu"
+
+                }
+
+            }
+
+
+
+        }
+
+
+
+
+
+
+    }
+</script>
+</body>
+</html>

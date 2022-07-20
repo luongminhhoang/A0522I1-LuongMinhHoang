@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtra() {
+        let array=[1,2,3,4,5,6,7,8];
+
+        let number = parseInt(prompt("nhập số cần tìm"))
+        let dem = 0;
+        for (let i=0;i<array.length;i++){
+            if (number === array[i]){
+                dem ++ ;
+            }
+        }
+
+        if (dem > 0){
+            document.write("So nay co trong mang");
+        }else {
+            return -1;
+        }
+
+    }
+   kiemtra();
+</script>
+</body>
+</html>
